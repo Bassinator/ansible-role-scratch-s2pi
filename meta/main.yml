@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: scratch-s2pi
+  role_name: scratch-s2pi
   author: Bassinator
-  description: Role to install the s2-pi scratch extension
+  description: Role to setup simplehttp server
 
   license: GNU GPLv3
 
