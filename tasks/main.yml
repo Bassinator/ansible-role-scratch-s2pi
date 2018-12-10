@@ -1,0 +1,17 @@
+---
+- name: install s2-pi extension
+  pip:
+    name: s2-pi
+
+- name: install  psutil
+  pip:
+    name: psutil
+
+- name: install simple-websocket-server
+  pip:
+    name: git+https://github.com/dpallot/simple-websocket-server.git
+
+- name: add extension to scrath config
+  lineinfile:
+    insertafter: "^["
+    line: "{ "name":"Custom Pi GPIO", "type":"extension", "file":"s2_pi.js", "md5":"mry.png", "url":"https://mryslab.github.io/s2-pi/", "tags":["hardware"]  },"
