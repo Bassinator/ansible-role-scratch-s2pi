@@ -14,4 +14,4 @@
 - name: add extension to scrath config
   lineinfile:
     insertafter: "^["
-    line: "{ "name":"Custom Pi GPIO", "type":"extension", "file":"s2_pi.js", "md5":"mry.png", "url":"https://mryslab.github.io/s2-pi/", "tags":["hardware"]  },"
+    line: '{ "name":"Custom Pi GPIO", "type":"extension", "file":"s2_pi.js", "md5":"mry.png", "url":"https://mryslab.github.io/s2-pi/", "tags":["hardware"]  },'
