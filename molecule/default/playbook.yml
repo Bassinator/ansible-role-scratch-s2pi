@@ -2,4 +2,4 @@
 - name: Converge
   hosts: all
   roles:
-    - role: bassinator.s2-pi
+    - role: bassinator.scratch-s2pi
