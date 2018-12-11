@@ -1,4 +1,7 @@
 ---
+- include_tasks: debian.yml
+  when: ansible_os_family == "Debian"
+
 - name: install s2-pi extension
   pip:
     name: s2-pi
@@ -11,7 +14,9 @@
   pip:
     name: git+https://github.com/dpallot/simple-websocket-server.git
 
-- name: add extension to scrath config
+- name: add extension to scratch config
   lineinfile:
-    insertafter: "^["
+    path: "/usr/lib/scratch2/scratch_extensions/extensions.json"
+    create: true
+    insertafter: '^[[]'
     line: '{ "name":"Custom Pi GPIO", "type":"extension", "file":"s2_pi.js", "md5":"mry.png", "url":"https://mryslab.github.io/s2-pi/", "tags":["hardware"]  },'

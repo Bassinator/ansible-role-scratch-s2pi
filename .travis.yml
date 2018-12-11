@@ -6,7 +6,6 @@ env:
   global:
     - ROLE_NAME: scratch-s2pi
   matrix:
-    - MOLECULE_DISTRO: centos7
     - MOLECULE_DISTRO: debian8
 
 install:

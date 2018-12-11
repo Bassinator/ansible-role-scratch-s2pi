@@ -1,0 +1,8 @@
+---
+- name: install prerequisites
+  apt:
+    name:
+      - python-pip
+      - python-dev
+      - git
+    state: present
