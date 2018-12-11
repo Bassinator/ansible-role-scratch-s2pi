@@ -4,7 +4,7 @@ services: docker
 
 env:
   global:
-    - ROLE_NAME: scratch-s2pi
+    - ROLE_NAME: scratch_s2pi
   matrix:
     - MOLECULE_DISTRO: debian8
 
@@ -15,7 +15,7 @@ install:
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
   - cd ../
-  - mv ansible-role-$ROLE_NAME bassinator.$ROLE_NAME
+  - mv ansible-role-scratch-s2pi bassinator.$ROLE_NAME
   - cd bassinator.$ROLE_NAME
 
 script:
