@@ -5,14 +5,17 @@
 - name: install s2-pi extension
   pip:
     name: s2-pi
+    executable: pip3
 
 - name: install  psutil
   pip:
     name: psutil
+    executable: pip3
 
 - name: install simple-websocket-server
   pip:
     name: git+https://github.com/dpallot/simple-websocket-server.git
+    executable: pip3
 
 - name: add extension to scratch config
   lineinfile:
